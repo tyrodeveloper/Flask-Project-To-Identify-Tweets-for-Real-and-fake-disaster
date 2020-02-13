@@ -1,0 +1,11 @@
+feed any kind of twitter data 
+
+find out the number of negative and positive tweets
+hash tag used frequently in both negative and positive tweets 
+Predict other tweets are negative or positive 
+
+
+
+next approach :
+
+twitter data real time streaming through kafka

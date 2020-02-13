@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <body>
+
+      <!-- <h1>WordCloud For Positive Tweets</h1> -->
+
+      <h1>{{ name }}</h1>
+
+      <p>Twitter has become an important communication channel in times of emergency.
+         The ubiquitousness of smartphones enables people to announce an emergency
+         they’re observing in real-time. Because of this, more agencies are interested
+         in programatically monitoring Twitter But, it’s not always clear whether a
+         person’s words are actually announcing a disaster So here i am trying to
+         build a machine learning model that predicts which Tweets are about real
+        disasters and which one’s aren’t and also you can see the wordcloud of positive
+         and negative words </p>
+
+        <a href="/getWordcloudofPositiveSentiment"><button>Get Positive Tweets WordCloud</button></a>
+        <a href="/getWordcloudofNegativeSentiment"><button>Get Negative Tweets WordCloud</button></a>
+        <a href="/mlmodelaccuracy"><button>Accuracy of Prediction Algorithm</button></a><br><br>
+        <!-- <a href="/predictsentiment"><button>Predict Tweet</button></a> -->
+        <form method="POST" action="/predictsentiment">
+            <input type="text" name="sentiment" class="form-control"  placeholder="Enter Sentiment" style="max-width: 300px;" autofocus required>
+            <button type="submit" class="btn btn-default">Predict Tweet</button>
+        </form>
+
+      <img src={{url}} alt="Chart" height="740" width="740">
+
+   </body>
+</html>
